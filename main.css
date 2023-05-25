@@ -1,0 +1,83 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: 'Arimo', sans-serif;
+}
+:root {
+    --color-1: red;
+    --color-2: red;
+    --color-3: red;
+    --color-4: black;
+    --color-5: red;
+  }
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.backgroundtext{
+    /* background-color: white; */
+    height: 100vh;
+    width: 150%;
+    rotate: 25deg;
+    margin-top: 5%;
+    margin-left: -30%;
+    word-wrap: break-word;
+}
+
+#bg-text{
+    font-size: 450px;
+    /* rotate: 15deg; */
+    -webkit-text-stroke-width: 10%;
+    line-height: 340px;
+    text-align: center;
+    color: gray;
+}
+
+.brand{
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: red;
+    z-index: 10;
+    color: #000000;
+}
+
+.brand2{
+    width: 150%;
+    height: 50vh;
+    rotate: 25deg;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-30%);
+    /* color: red; */
+    z-index: 100;
+    
+}
+
+.brand2 h1{
+    color: transparent;
+    font-size: 500px;
+    background: linear-gradient(-25deg, 
+        var(--color-1) 19%, 
+        transparent 19%,transparent 20%, 
+        var(--color-2) 20%, var(--color-2)  39%,
+        transparent 39%,transparent 40%, 
+        var(--color-3) 40%,var(--color-3) 59% ,
+        transparent 59%,transparent 60%, 
+        var(--color-4) 60%, var(--color-4) 79%,
+        transparent 79%, transparent 80%, 
+        var(--color-5) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 100;
+}
